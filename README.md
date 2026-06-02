@@ -2,7 +2,7 @@
 
 Đồ án môn DS108:  phân tích dữ liệu trò chơi Steam (2022-Q2 2026) với phân tích khám phá, kiểm định thống kê và các mô hình máy học dự báo.
 
-## 📊 Tổng Quan Dự Án
+## Tổng Quan Dự Án
 
 Dự án này nhằm mục đích:
 - **Thu thập & Làm sạch** dữ liệu trò chơi Steam từ nhiều nguồn (SteamSpy API + Steam Store)
@@ -10,7 +10,7 @@ Dự án này nhằm mục đích:
 - **Xây dựng các mô hình dự báo** để dự báo các chỉ số thành công của trò chơi
 - **Cung cấp thông tin chi tiết** về cảnh quan ngành công nghiệp game
 
-## 📈 Tóm Tắt Dataset
+## Tóm Tắt Dataset
 
 | Thuộc Tính | Chi Tiết |
 |---|---|
@@ -34,7 +34,7 @@ Dataset bao gồm:
 
 Xem [steam_games_data_dictionary.md](steam_games_data_dictionary.md) để có tài liệu chi tiết về các trường dữ liệu.
 
-## 📁 Cấu Trúc Dự Án
+## Cấu Trúc Dự Án
 
 ```
 d:\FINAL_DS108\
@@ -57,7 +57,7 @@ d:\FINAL_DS108\
     └── collect_steam_data.py          # Script thu thập dữ liệu (SteamSpy API)
 ```
 
-## 🛠️ Cài Đặt & Thiết Lập
+## Cài Đặt & Thiết Lập
 
 ### Yêu Cầu Tiên Quyết
 - Python 3.8+
@@ -91,7 +91,7 @@ jupyter lab
 jupyter notebook
 ```
 
-## 📋 Các Thư Viện Phụ Thuộc
+## Các Thư Viện Phụ Thuộc
 
 - **pandas** (≥1.5.0) - Thao tác và phân tích dữ liệu
 - **numpy** (≥1.24.0) - Tính toán số học
@@ -104,7 +104,7 @@ jupyter notebook
 - **streamlit** (≥1.28.0) - Dashboard ứng dụng web (tùy chọn)
 - **jupyterlab** (≥3.6.0) - Môi trường notebook tương tác
 
-## 🚀 Bắt Đầu Nhanh
+## Bắt Đầu Nhanh
 
 ### Chạy Phân Tích
 
@@ -138,7 +138,7 @@ python scripts/collect_steam_data.py
 
 **Ghi Chú**: Yêu cầu quyền truy cập API SteamSpy hợp lệ và tuân thủ giới hạn tỉ lệ API.
 
-## 📊 Các Thành Phần Phân Tích
+## Các Thành Phần Phân Tích
 
 ### 1. Làm Sạch Dữ Liệu (`01_data_cleaning.ipynb`)
 - Tải dữ liệu thô và kiểm tra cấu trúc
@@ -167,7 +167,7 @@ python scripts/collect_steam_data.py
 - **Tầm Quan Trọng Tính Năng**: Xác định các yếu tố dự báo chính
 - **So Sánh Mô Hình**: Trực quan hóa hiệu suất
 
-## 💡 Những Thông Tin Chính (Dự Kiến)
+## Những Thông Tin Chính (Dự Kiến)
 
 - Phân bố thể loại và xu hướng phổ biến
 - Mối quan hệ giữa giá và sự tham gia của người chơi
@@ -175,7 +175,7 @@ python scripts/collect_steam_data.py
 - Các mẫu hình theo thời gian trong phát hành trò chơi và hoạt động người chơi
 - Các yếu tố dự báo sự phổ biến của trò chơi
 
-## 📝 Ghi Chú Dữ Liệu
+## Ghi Chú Dữ Liệu
 
 - **Giá Trị Bị Thiếu**: Một số trường null cho các trò chơi miễn phí hoặc do hạn chế của nguồn dữ liệu
 - **Phạm Vi Thời Gian**: Chủ yếu là các trò chơi phổ biến trên Steam
@@ -183,12 +183,12 @@ python scripts/collect_steam_data.py
 - **Nguồn**: SteamSpy API + web scraping Steam Store
 - **Tính Nhất Quán**: Hai nguồn dữ liệu cho nhà phát triển/nhà xuất bản (SteamSpy vs. Steam Store) để xác thực
 
-## 🔍 Từ Điển Dữ Liệu
+## Từ Điển Dữ Liệu
 
 Để biết thông tin chi tiết về từng trường, vui lòng xem:
 - [steam_games_data_dictionary.md](steam_games_data_dictionary.md)
 
-## 🎯 Mẹo Quy Trình Làm Việc
+## Mẹo Quy Trình Làm Việc
 
 1. **Bắt Đầu Từ Đầu**: Luôn chạy notebooks theo thứ tự (01 → 02 → 03)
 2. **Lưu Trữ Dữ Liệu**: Dữ liệu đã xử lý được lưu vào `data/processed/` để tái sử dụng
@@ -196,7 +196,7 @@ python scripts/collect_steam_data.py
 4. **Trực Quan Hóa**: Sử dụng cả matplotlib và plotly cho các phong cách khám phá khác nhau
 5. **Hiệu Suất**: Các thao tác lớn có thể mất vài giây; hãy kiên nhẫn với các tác vụ nặng bộ nhớ
 
-## 📌 Các Tác Vụ Thường Gặp
+## Các Tác Vụ Thường Gặp
 
 ### Cập Nhật Dữ Liệu
 ```bash
@@ -214,7 +214,7 @@ Nếu bạn gặp vấn đề bộ nhớ:
 2. Chạy tất cả các notebooks theo thứ tự
 3. Xem xét các kết quả đầu ra và trực quan hóa
 
-## 🤝 Đóng Góp
+## Đóng Góp
 
 Để cải tiến hoặc sửa lỗi:
 1. Tạo một nhánh mới
@@ -222,17 +222,19 @@ Nếu bạn gặp vấn đề bộ nhớ:
 3. Kiểm tra kỹ lưỡng
 4. Ghi chép lại các sửa đổi của bạn
 
-## 📄 Giấy Phép
+## Giấy Phép
 
 Dự án này được sử dụng cho mục đích giáo dục và nghiên cứu.
 
-## 👤 Tác Giả
+## Tác Giả
+- 24521961 - Nguyễn Thị Phương Tuyền
+- 24521991 - Phùng Châu Đan Vi
 
 Tạo: Tháng 6 năm 2026
 
-## 📞 Hỗ Trợ  
-
-Đối với các câu hỏi hoặc vấn đề:
+## Hỗ Trợ  
+- Liên hệ : 24521961@gm.uit.edu.vn.
+- Đối với các câu hỏi hoặc vấn đề:
 1. Kiểm tra từ điển dữ liệu để làm rõ trường
 2. Xem xét các nhận xét trong notebook và các ô markdown
 3. Xác minh tất cả các phụ thuộc được cài đặt đúng cách
@@ -240,4 +242,4 @@ Tạo: Tháng 6 năm 2026
 ---
 
 **Cập Nhật Lần Cuối**: 2 tháng 6 năm 2026  
-**Trạng Thái**: Phát Triển Tích Cực
+**Trạng Thái**: Đang phát triển
