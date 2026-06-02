@@ -69,7 +69,7 @@
 | Thuộc tính | Giá trị |
 |---|---|
 | **Kiểu dữ liệu** | Date (lưu dạng string YYYY-MM-DD) |
-| **Miền giá trị** | Khoảng 2022-01-01 đến 2026-06-19 |
+| **Miền giá trị** | Khoảng 2022-01-01 đến 2026-06-1 |
 | **Null** | 0 |
 | **Unique** | 1,123 giá trị duy nhất |
 | **Ý nghĩa** | Ngày phát hành chính thức (global release date) của game trên Steam. Định dạng chuẩn ISO 8601 (YYYY-MM-DD). Được dùng để tính tuổi game, lọc theo thời gian, phân tích xu hướng. |
